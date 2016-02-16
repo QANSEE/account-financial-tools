@@ -85,30 +85,22 @@
 
           <newline/>
           <group expand="0" string="Group By...">
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'date:day'}"
                     string="Run date"/>
             <filter domain='[]' context="{'group_by': 'state'}"
                     string="State"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'level'}"
                     icon="terp-gtk-jump-to-rtl"  string="Level"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'partner_id'}"
                     icon="terp-partner" string="Partner"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'account_id'}"
                     icon="terp-folder-green" string="Account"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'invoice_id'}"
                     icon="terp-document-new" string="Invoice"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'policy_id'}"
                     icon="terp-document-new" string="Credit policy"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'policy_level_id'}"
                     icon="terp-document-new" string="Credit policy level"/>
-            <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'channel'}"
                     icon="terp-document-new" string="Channel"/>
             <filter domain='[]' context="{'group_by': 'manually_overridden'}"
