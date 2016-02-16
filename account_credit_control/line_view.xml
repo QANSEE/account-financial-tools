@@ -86,8 +86,10 @@
           <newline/>
           <group expand="0" string="Group By...">
             <separator orientation="vertical"/>
-            <filter domain='[]' context="{'group_by': 'date'}"
-                    icon="terp-go-month" string="Run date"/>
+            <filter domain='[]' context="{'group_by': 'date:day'}"
+                    string="Run date"/>
+            <filter domain='[]' context="{'group_by': 'state'}"
+                    string="State"/>
             <separator orientation="vertical"/>
             <filter domain='[]' context="{'group_by': 'level'}"
                     icon="terp-gtk-jump-to-rtl"  string="Level"/>
