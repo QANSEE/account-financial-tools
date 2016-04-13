@@ -86,7 +86,7 @@
           <newline/>
           <group expand="0" string="Group By...">
             <filter domain='[]' context="{'group_by': 'date:day'}"
-                    string="Run date"/>
+                    icon="terp-go-month" string="Run date"/>
             <filter domain='[]' context="{'group_by': 'state'}"
                     string="State"/>
             <filter domain='[]' context="{'group_by': 'level'}"

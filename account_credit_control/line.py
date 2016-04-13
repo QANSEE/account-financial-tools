@@ -132,6 +132,7 @@ class CreditControlLine(models.Model):
 
     level = fields.Integer(string='Policy Level',
                            related='policy_level_id.level',
+                           group_operator='max',
                            store=True,
                            readonly=True)
 
