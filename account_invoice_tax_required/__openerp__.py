@@ -19,13 +19,16 @@
 ##############################################################################
 {
     'name': "Tax required in invoice",
-    'version': "8.0.1.0.0",
-    "author": "Camptocamp,Odoo Community Association (OCA)",
-    'website': "http://www.camptocamp.com",
+    'version': "9.0.1.0.0",
+    'author': "Camptocamp, "
+              "BCIM sprl, "
+              "Odoo Community Association (OCA)",
+    'website': "http://odoo-community.org",
     'category': "Localisation / Accounting",
     'license': "AGPL-3",
     'depends': ["account"],
     'data': [
     ],
-    'installable': False,
+    "license": "AGPL-3",
+    'installable': True,
 }

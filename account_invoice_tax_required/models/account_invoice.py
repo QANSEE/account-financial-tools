@@ -17,7 +17,8 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from openerp import models, api, exceptions, _
+from openerp import models, api, _
+from openerp.exceptions import Warning
 
 
 class AccountInvoice(models.Model):
@@ -28,14 +29,12 @@ class AccountInvoice(models.Model):
         errors = []
         error_template = _("Invoice has a line with product %s with no taxes")
         for invoice in self:
-            for invoice_line in invoice.invoice_line:
-                if not invoice_line.invoice_line_tax_id:
+            for invoice_line in invoice.invoice_line_ids:
+                if not invoice_line.invoice_line_tax_ids:
                     error_string = error_template % (invoice_line.name)
                     errors.append(error_string)
         if errors:
-            errors_full_string = ','.join(x for x in errors)
-            raise exceptions.Warning(_('No Taxes Defined!'),
-                                     errors_full_string)
+            raise Warning('\n'.join([_('No Taxes Defined!'), '\n'] +  errors))
         else:
             return True
 
